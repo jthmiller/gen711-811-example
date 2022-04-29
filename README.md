@@ -1,5 +1,9 @@
 # gen711-811-example
 
+- Due no later than 5/13/22 (can submit eariler)
+- Graded on the sections below (150 points)
+- Presentations (50 points)
+
 ## Background
 
 We were interested... 
@@ -15,6 +19,8 @@ Our files were in fastqz
 We installed X programs with a conda environment
 
 We ran our analysis on a laptop...
+
+We ran into this issue
 
 ## Findings
 
