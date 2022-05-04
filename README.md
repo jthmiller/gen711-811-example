@@ -31,3 +31,4 @@ To add a plot from the 'figs' folder, there needs to be a line in this document 
 ```
 ![plot](figs/plotfile.png)
 ```
+Figure 1. Provide figure descriptions- indicate how figure was made (programs), with which data. Make sure to cite everything you used. 
