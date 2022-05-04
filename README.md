@@ -24,7 +24,7 @@ We ran into this issue
 
 ## Findings
 
-![plot](figs/plotfile.png)
+![plot](plots/fst_div.png)
 
 
 To add a plot from the 'figs' folder, there needs to be a line in this document that looks like this:
