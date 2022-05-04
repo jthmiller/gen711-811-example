@@ -25,10 +25,10 @@ We ran into this issue
 ## Findings
 
 ![plot](plots/fst_div.png)
+Figure 1. Provide figure descriptions- indicate how figure was made (programs), with which data. Make sure to cite everything you used. 
 
-
+### Note:
 To add a plot from the 'figs' folder, there needs to be a line in this document that looks like this:
 ```
 ![plot](figs/plotfile.png)
 ```
-Figure 1. Provide figure descriptions- indicate how figure was made (programs), with which data. Make sure to cite everything you used. 
