@@ -1,8 +1,5 @@
 # gen711-811-example
 
-- Due no later than 5/13/22 (can submit eariler)
-- Graded on the sections below (150 points)
-- Presentations (50 points)
 
 ## Background
 ### even smaller 
@@ -16,7 +13,9 @@ Author et al. 2019 sequences we downloaded from ...
 
 Our files were in fastqz
 
-We installed X programs with a conda environment
+We used X programs loaded with a conda environment on the RON computing cluster ...
+
+or
 
 We ran our analysis on a laptop...
 
