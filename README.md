@@ -1,11 +1,13 @@
 # gen711-811-example
 
+## Project Title  
 
-## Background
-### even smaller 
-We were interested... 
+## Authors  
 
-Author et al. 2019 assembled the genome of ... We compared. 
+## Background  
+
+### even smaller but highlighted text
+We were interested... Author et al. 2019 assembled the genome of ... We compared. 
 
 ## Methods
 
@@ -19,7 +21,7 @@ or
 
 We ran our analysis on a laptop...
 
-We ran into this issue
+We ran into this issue...
 
 ## Findings
 
