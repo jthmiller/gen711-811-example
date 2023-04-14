@@ -1,5 +1,10 @@
 ## Lab
 
+2 items to do before you leave and enjoy the weather:
+1. Add your lab notes to your github account to be graded
+2. Contribute once to your lab group repo.
+
+## But first:
 1. Review rubric
 2. Review github interface 
     - Log into your github account, and make a repo named 'lab-notes'
@@ -9,10 +14,16 @@
         git clone https://github.com/jthmiller/lab-notes.git
         ```
 - Add the folder to your vs code workspace
+- Make a new document to hold your github notes
+- Install the github extenstion for vscode: https://code.visualstudio.com/docs/sourcecontrol/github
 
+- While you wait for things to install, start to form groups (no more than 3) and discuss which of these projects would interest you:
 
-## After you have started  
-
+    - Metabarcoding of cyanobacteria communities from New England Lakes over a summer.
+    - Metabarcoding to compare fish species across US estuaries.
+    - Metabarcoding of Algae (Diatoms) to compare high and low quality streams.
+    - Fecal microbiota transplant (FMT) study. Metabarcoding of human guts.
+    - Your choice (ok with us to make sure it is feasible) 
 
 ## After choosing a project and group members:
 - Choose one of your accounts to be the main host of the project
