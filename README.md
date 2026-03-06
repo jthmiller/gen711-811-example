@@ -1,17 +1,11 @@
-# gen711-811-example
-
-My name 
-Project
-
-## Project Title  
-
-New proj title
+# My Project Name
+Give your project a sensible title 
 
 ## Authors  
+List your group members
 
 ## Background  
 
-### even smaller but highlighted text
 We were interested... Author et al. 2019 assembled the genome of ... We compared. 
 
 ## Methods
