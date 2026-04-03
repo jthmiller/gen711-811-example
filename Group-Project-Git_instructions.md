@@ -2,7 +2,6 @@
 1. Review rubric [here](rubric.md)
 2. Start to form groups (no more than 3) and discuss which of these projects would interest you:
 
-
 ## After choosing a project and group members:
 - Choose one of your accounts to be the main host of the project
 - Make a new repository with a name that reflects the project.
@@ -43,6 +42,9 @@ git remote add project_leader_username git://github.com/project_leader_username/
         - To get the data, run this from within your repo. Do not commit
         - ```wget -P "data/fastqs" -O "fmt-tutorial-demux-1.qza" "https://data.qiime2.org/2024.10/tutorials/fmt/fmt-tutorial-demux-1-10p.qza"```
 
-5. Start making your pipeline. Save all steps to a script in the 'code' directory. 
 
-6. Use the HCGS tutorials for help when needed [here](https://github.com/Joseph7e/HCGS_Metabarcoding_Tutorials)
+5. Get the reference databases needed for your project from ```/tmp/GEN711-811_data/refdbs``` into a directory called ```refdb``` in your repo. 
+
+6. Start making your pipeline. Save all steps to a script in the 'code' directory. A good place to start is '01_trim.sh' 
+
+7. Use the HCGS tutorials for help when needed [here](https://github.com/Joseph7e/HCGS_Metabarcoding_Tutorials)

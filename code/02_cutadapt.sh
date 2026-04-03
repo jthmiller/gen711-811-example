@@ -1,7 +1,7 @@
 #!/bin/bash
 primer="16s_V4-V5"
 projname="YOURPROJ_${primer}"
-
+## example: projname="Cyanobac_16s_V4-V5"
 
 ## copied from qiime2_parameters.sh
 fw='^GTGYCAGCMGCCGCGGTAA'	
