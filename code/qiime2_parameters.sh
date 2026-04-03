@@ -128,10 +128,7 @@
     
     ## denoise
     polyg_len=200
-    
     overlap=10
-
-    echo $reads
 
     ##taxonomy
     maxaccepts=10
