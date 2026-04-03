@@ -2,18 +2,6 @@
 1. Review rubric [here](rubric.md)
 2. Start to form groups (no more than 3) and discuss which of these projects would interest you:
 
-    - Your own data/choice (ok with us to make sure it is feasible) 
-        - put all fastq files in a directory named 'fastqs' in the 'data' folder
-        - See me if you need help with this, but if you got your data from HCGS, it will probably look like this:
-        ```cp cobb-data.sr.unh.edu/projects/YOUR-PROJ-NAME/reads/*fastq.gz data/fastqs/```
-    - Metabarcoding of cyanobacteria communities from New England Lakes over a summer.
-        - /tmp/GEN711-811_data/Cyanobacteria
-    - Metabarcoding to compare fish species across US estuaries.
-        - /tmp/GEN711-811_data/NERRs
-    - Metabarcoding of Algae (Diatoms) to compare high and low quality streams.
-        - /tmp/GEN711-811_data/MassDEP
-    - Fecal microbiota transplant (FMT) study. Metabarcoding of human guts.
-        - /tmp/GEN711-811_data/FMT
 
 ## After choosing a project and group members:
 - Choose one of your accounts to be the main host of the project
@@ -32,11 +20,29 @@
 ```
 git clone https://github.com/jthmiller/project.git
 cd project
-
+```
 Then, add a connection to the original owner’s repository:
 ```
 git remote add project_leader_username git://github.com/project_leader_username/project
 ```
 
-For the project repo, you need to make a file named '.gitignore'. This is a text file that tells git to ignore the files listed in particular directories. 
+3. ***IMPORTANT*** For the project repo, you need to make a file named '.gitignore' in the main repo directory. This is a text file that tells git to ignore the files listed in particular directories. We do not want to share fastqs over github- only the code to do so. We will share fastqs using the '/tmp' directory as done in the steps above. 
 
+4. Get your fastqs into the repo
+    - Your own data/choice (ok with us to make sure it is feasible) 
+        - put all fastq files in a directory named 'fastqs' in the 'data' folder
+        - See me if you need help with this, but if you got your data from HCGS, it will probably look like this:
+        ```cp cobb-data.sr.unh.edu/projects/YOUR-PROJ-NAME/reads/*fastq.gz data/fastqs/```
+    - Metabarcoding of cyanobacteria communities from New England Lakes over a summer (16s v4-v5).
+        - /tmp/GEN711-811_data/Cyanobacteria
+    - Metabarcoding to compare fish species across US estuaries (12s MiFish).
+        - /tmp/GEN711-811_data/NERRs
+    - Metabarcoding of Algae (Diatoms) to compare high and low quality streams (18s or RBCL).
+        - /tmp/GEN711-811_data/MassDEP
+    - Fecal microbiota transplant (FMT) study. Metabarcoding of human guts (16s). Most of the support for this project is through qiime2's website turtorials
+        - To get the data, run this from within your repo. Do not commit
+        - ```wget -P "data/fastqs" -O "fmt-tutorial-demux-1.qza" "https://data.qiime2.org/2024.10/tutorials/fmt/fmt-tutorial-demux-1-10p.qza"```
+
+5. Start making your pipeline. Save all steps to a script in the 'code' directory. 
+
+6. Use the HCGS tutorials for help when needed [here](https://github.com/Joseph7e/HCGS_Metabarcoding_Tutorials)
