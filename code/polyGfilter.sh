@@ -26,6 +26,7 @@ echo "polyG filter will remove polyG tails and also filter out reads that are to
      
  done > fastp.out 2>&1
  
+
 echo "info in fastp.out\n"
 echo -e "\npolyG filter complete.\n"
 echo "counting reads before and after polyG filter...\n"
