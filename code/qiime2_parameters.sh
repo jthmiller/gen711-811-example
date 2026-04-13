@@ -40,7 +40,7 @@
     sklearn=${sklearn:-/home/unhAW/jtmiller/watts/ref-database/rbcl/diat_barcode_v10_263bp-sklearn-classifier.qza}
 
 
-### MiFish
+### MiFish (NOTE, MIFSIH CHANGED TO AN 18S PROJECT. DO NOT USE. USE 18s INSTEAD ###)
 
     fw='^GTCGGTAAAACTCGTGCCAGC'	
     rv='^CATAGTGGGGTATCTAATCCCAGTTTG'
