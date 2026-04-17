@@ -34,4 +34,3 @@ qiime demux summarize \
     --o-visualization results/${projname}_demux_cutadapt.qzv
 
 
-
