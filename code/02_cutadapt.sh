@@ -3,7 +3,9 @@
 ### THIS IS WHERE PROJECTS BEGIN TO DIVERGE. The cutadapt parameters and primers will depend on the project. See qiime2_parameters.sh for cutadapt parameters and 01_trim.sh for polyG filter parameters.
 primer="RBCL"
 projname="DEP_${primer}"
-## example: projname="Cyanobac_16s_V4-V5"
+## example: projname="DEP_RBCL"
+
+conda activate qiime2-amplicon-2026.1
 
 ### import fastqs. Add the demultiplexed sequences to the data/results directory. This will create a .qza file that can be used for cutadapt and qiime2 downstream analyses.
 qiime tools import \
