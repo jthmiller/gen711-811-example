@@ -10,12 +10,10 @@ In VS Code — Merge (via Source Control UI)
 5. Resolve any merge conflicts if prompted, then commit. You should be able to 
 
 
-
+### Git stash
 Git stash helps before you start the merge/rebase — it's about getting your working directory clean enough to do the operation in the first place.
 
-
-The Problem It Solves
-If you have uncommitted changes on your branch and try to merge or rebase, Git will often refuse or warn you:
+The Problem It Solves: If you have uncommitted changes on your branch and try to merge or rebase, Git will often refuse or warn you:
 error: Your local changes to the following files would be overwritten by merge
 Stash temporarily shelves those changes so you can proceed.
 
@@ -34,8 +32,7 @@ In VS Code
 3. ... → Stash → Pop Stash
 
 ## If you have not yet committed changes, and need to merge changes on 'main', use 'git stash'
-When Stash Doesn't Help Here
-Situation Stash helps?
+When Stash Does/Doesn't Help
 
 1. Uncommitted edits blocking a merge/rebase? ✅ Yes
 2. You need to quickly switch branches mid-work? ✅ Yes
