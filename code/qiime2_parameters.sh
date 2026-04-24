@@ -147,9 +147,9 @@
     max=430
 
 
-    refreads=${refreads:-/home/users/jtm1171/refdbs/16s/ref_seqs_16S_V4-V5.qza}
-    reftax=${reftax:-/home/users/jtm1171/refdbs/16s/99_otus_16S_taxonomy.qza}
-    sklearn=${sklearn:-/home/users/jtm1171/refdbs/16s/silva_99_otus_16S_nb-classifier.qza}
+    refreads=${refreads:-/tmp/GEN711-811_data/refdbs/ref_seqs_16S_V4-V5.qza}
+    reftax=${reftax:-/tmp/GEN711-811_data/refdbs/99_otus_16S_taxonomy.qza}
+    sklearn=${sklearn:-/tmp/GEN711-811_data/refdbs/silva_99_otus_16S_nb-classifier.qza}
 
 
 ## leray_co1
