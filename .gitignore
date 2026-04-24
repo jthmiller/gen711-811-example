@@ -3,6 +3,8 @@ data/results/*
 data/poly-G-trimmed/*
 refdb/*
 
+fastqs/*
+
 
 mv data/fastqs/fastqs/*gz data/fastqs/
 rm -r data/fastqs/fastqs/

@@ -14,7 +14,6 @@
 
     cutadapt_config="--p-front-f $fw1 --p-front-f $fw2 --p-front-f $fw3 --p-front-r $rv1 --p-front-r $rv2"
 
-
     polyg_len=150
     
     ## denoise
@@ -34,10 +33,10 @@
     weak_id=0.50 
     #tophit_perc_identity=0.90
 
-    refreads=${refreads:-/home/unhAW/jtmiller/watts/ref-database/rbcl/diat_barcode_v10_263bp-seqs.qza}
-    reftax=${reftax:-/home/unhAW/jtmiller/watts/ref-database/rbcl/diat_barcode_v10_263bp-tax.qza}
-    blastdb=${blastdb:-/home/unhAW/jtmiller/watts/ref-database/rbcl/blast_diat.barcode}
-    sklearn=${sklearn:-/home/unhAW/jtmiller/watts/ref-database/rbcl/diat_barcode_v10_263bp-sklearn-classifier.qza}
+    refreads=${refreads:-/tmp/GEN711-811_data/refdbs/diat_barcode_v10_263bp-seqs.qza}
+    reftax=${reftax:-/tmp/GEN711-811_data/refdbs/diat_barcode_v10_263bp-tax.qza}
+    blastdb=${blastdb:-/tmp/GEN711-811_data/refdbs/blast_diat.barcode}
+    sklearn=${sklearn:-/tmp/GEN711-811_data/refdbs/diat_barcode_v10_263bp-sklearn-classifier.qza}
 
 
 ### MiFish (NOTE, MIFSIH CHANGED TO AN 18S PROJECT. DO NOT USE. USE 18s INSTEAD ###)
@@ -110,9 +109,9 @@
     trimleftf=0
     trimleftr=0
 
-    reftax=${reftax:-/home/users/jtm1171/refdbs/18s/SILVA/silva-138-99-tax.qza}
-    refreads=${refreads:-/home/users/jtm1171/refdbs/18s/SILVA/silva-138-99-seqs-pid_0.65-extracted.qza}
-    sklearn=${sklearn:-/home/users/jtm1171/refdbs/18s/SILVA/silva-138-99-seqs-pid_0.65-classifier.qza}
+    reftax=${reftax:-/tmp/GEN711-811_data/refdbs/silva-138-99-tax.qza}
+    refreads=${refreads:-/tmp/GEN711-811_data/refdbs/silva-138-99-seqs-pid_0.65-extracted.qza}
+    sklearn=${sklearn:-/tmp/GEN711-811_data/refdbs/silva-138-99-seqs-pid_0.65-classifier.qza}
  
     min=50
     max=175

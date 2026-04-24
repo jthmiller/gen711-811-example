@@ -4,6 +4,7 @@
 primer="RBCL"
 projname="DEP_${primer}"
 ## example: projname="DEP_RBCL"
+echo $projname
 
 conda activate qiime2-amplicon-2026.1
 
