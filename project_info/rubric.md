@@ -16,9 +16,9 @@
 ### Get into groups to discuss which project among these choices: 
 - Metabarcoding of cyanobacteria communities from New England Lakes over a summer.
 ```
-/tmp/gen711_project_data/cyano
+/tmp/gen711_project_data/cyanobacteria
 ```
-- Metabarcoding to compare fish species across US estuaries.
+- Metabarcoding to compare eukaryotes species across US estuaries.
 ```
 /tmp/gen711_project_data/fish
 ```
