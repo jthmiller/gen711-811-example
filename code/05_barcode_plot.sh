@@ -16,11 +16,12 @@ qiime taxa barplot \
 
 
 ## If you get an error form the barplotabout missing IDs, try this:
-qiime taxa filter-table \
-  --i-table results/${projname}_table.qza \
-  --i-taxonomy results/${projname}_hybrid_taxonomy.qza \
-  --o-filtered-table results/${projname}_filtered-table.qza
 
+qiime feature-table filter-features \
+  --i-table results/${projname}_table.qza \
+  --m-metadata-file results/${projname}_hybrid_taxonomy.qza \
+  --o-filtered-table results/${projname}_taxonomy-matched-table.qza
+  
 qiime taxa barplot \
   --i-table results/${projname}_filtered-table.qza \
   --i-taxonomy results/${projname}_hybrid_taxonomy.qza \
