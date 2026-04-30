@@ -39,3 +39,6 @@ cp /home/users/jtm1171/old-home/watts/raw-data/cobb-data.sr.unh.edu/projects/240
 ls /tmp/GEN711-811_data/NERRs/fastqs/ | sed "s/_S.*//g" | sort | uniq > /tmp/GEN711-811_data/NERRs/metadata/samplelist.txt
 head -n1 update-swmp-realtime-sample-metadata.tsv > /tmp/GEN711-811_data/NERRs/metadata/metadata-update.tsv
 grep -f /tmp/GEN711-811_data/NERRs/metadata/samplelist.txt update-swmp-realtime-sample-metadata.tsv >> /tmp/GEN711-811_data/NERRs/metadata/metadata-update.tsv
+
+## CYANO metadata
+cp /home/users/jtm1171/CYANO/16s/metadata/pico-mdat.tsv /tmp/GEN711-811_data/Cyanobacteria/CYANO/metadata/
