@@ -48,13 +48,4 @@ qiime diversity core-metrics-phylogenetic \
     --output-dir data/results/${projname}_core-metrics-data/
 
 ## If you need to re-run the diversity core-metrics-phylogenetic command, you will need to delete the data/results/${projname}_core-metrics-data/ directory before re-running the command, otherwise you will get an error about the directory already existing. You can do this with the following command:    
-
-
-
-#SampleID       newname frmID   State   Year    SiteAlias
-MassExtraRef-5289       MassExtra_Ref_5289-2024 MassExtra_Ref_5289      MA      2024    MassExtra_Ref_>
-MassExtraRef-5289-QC    MassExtra_Ref_5289_QC-2024      MassExtra_Ref_5289      MA      2024    MassEx>
-MassExtraRef-8749       MassExtra_Ref_8749-2024 MassExtra_Ref_8749      MA      2024    MassExtra_Ref_>
-
-
-
+rm -rf data/results/${projname}_core-metrics-data/
