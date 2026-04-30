@@ -22,6 +22,11 @@ cp \
     /tmp/GEN711-811_data/Cyanobacteria/metadata/
 
 
+### MassDEP metadata
+cp ~/MassDEP/rbcl/metadata/MA_2022-2023-2024-metadata.tsv /tmp/GEN711-811_data/MassDEP/metadata/MA_2022-2023-2024-metadata.tsv
+
+
+
 ### DO NOT RUN: NERRs 18s
 mkdir -p /tmp/GEN711-811_data/NERRs/fastqs /tmp/GEN711-811_data/NERRs/metadata
 cp \
@@ -33,7 +38,11 @@ chmod +r -R /tmp/GEN711-811_data
 
 find  ~/old-home/watts/raw-data/ -name HEsbMay2023_S748_L002_R2_001.fastq.gz
 
+
 cp /home/users/jtm1171/old-home/watts/raw-data/cobb-data.sr.unh.edu/projects/240419_A01346_0131_AHTHT7DRX3_041924-AW-NERRABGBHE-18SNX030524/reads/ \
+
+## 18s metadata
+cp /home/users/jtm1171/NERRs-18s-metabarcoding/metadata/update-swmp-realtime-sample-metadata.tsv /tmp/GEN711-811_data/NERRs/metadata/update-swmp-realtime-sample-metadata.tsv
 
 ### Make metadata 
 ls /tmp/GEN711-811_data/NERRs/fastqs/ | sed "s/_S.*//g" | sort | uniq > /tmp/GEN711-811_data/NERRs/metadata/samplelist.txt
