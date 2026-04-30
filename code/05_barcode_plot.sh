@@ -3,9 +3,6 @@
 ## replace with the qiime2 environment youve been using 
 conda activate qiime2-amplicon-2026.1
 
-
-#!/bin/bash
-
 ### This script will create a barcode plot of the taxonomic composition of each sample. It will use the qiime2 feature-table and taxonomy files to create a stacked bar plot of the relative abundance of each taxon in each sample. The plot will be saved as a .png file in the results directory.
 
 qiime taxa barplot \
