@@ -15,6 +15,18 @@ qiime taxa barplot \
 ## To download the .qzv file, right click on the file in vscode to download it to your local computer, then you can upload it to the qiime2 view website.
 
 
+## If you get an error form the barplotabout missing IDs, try this:
+qiime taxa filter-table \
+  --i-table results/${projname}_table.qza \
+  --i-taxonomy results/${projname}_hybrid_taxonomy.qza \
+  --o-filtered-table results/${projname}_filtered-table.qza
+
+qiime taxa barplot \
+  --i-table results/${projname}_filtered-table.qza \
+  --i-taxonomy results/${projname}_hybrid_taxonomy.qza \
+  --m-metadata-file data/metadata/metadata-update.tsv \
+  --o-visualization results/${projname}_taxa_barplot.qzv
+
 ## Make a phylogenetic tree and run core metrics to get the alpha and beta diversity metrics for each sample. This will be used in the next script to create a PCoA plot of the beta diversity metrics.
 qiime phylogeny align-to-tree-mafft-fasttree \
    --i-sequences results/${projname}_rep-seqs.qza \
