@@ -4,7 +4,7 @@
 conda activate qiime2-amplicon-2026.1
 
 ### This script will create a barcode plot of the taxonomic composition of each sample. It will use the qiime2 feature-table and taxonomy files to create a stacked bar plot of the relative abundance of each taxon in each sample. The plot will be saved as a .png file in the data/results directory.
-
+### NOTE: Qiime view appears to be working only in chrome. 
 qiime taxa barplot \
   --i-table data/results/${projname}_table.qza \
   --i-taxonomy data/results/${projname}_hybrid_taxonomy.qza \
