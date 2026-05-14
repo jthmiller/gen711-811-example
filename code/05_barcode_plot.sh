@@ -15,13 +15,23 @@ qiime taxa barplot \
 ## To download the .qzv file, right click on the file in vscode to download it to your local computer, then you can upload it to the qiime2 view website.
 
 
-## If you get an error form the barplotabout missing IDs, try this:
+## If you get an error form the barplotabout missing features, try this:
 
 qiime feature-table filter-features \
   --i-table data/results/${projname}_table.qza \
   --m-metadata-file data/results/${projname}_hybrid_taxonomy.qza \
   --o-filtered-table data/results/${projname}_taxonomy-matched-table.qza
   
+
+### If you get an error about missing sample IDs, try this:
+### If you have a feature table that contains samples that are not present in your metadata file, you can use the following command to filter the feature table to include only the samples that are present in the metadata file:
+qiime feature-table filter-samples \
+  --i-table YOUR_table.qza \
+  --m-metadata-file YOURMETADATA.tsv \
+  --o-filtered-table YOUR_filtered_table.qza
+
+### Use this table for all downstream analyses, including alpha and beta diversity analyses, taxonomic composition analyses, and differential abundance analyses. This filtered table will only include the samples that are present in the metadata file, and it will exclude any samples that are not present in the metadata file. This is important because it ensures that all of the samples in the feature table have corresponding metadata, which is necessary for accurate downstream analyses.
+
 qiime taxa barplot \
   --i-table data/results/${projname}_filtered-table.qza \
   --i-taxonomy data/results/${projname}_hybrid_taxonomy.qza \
